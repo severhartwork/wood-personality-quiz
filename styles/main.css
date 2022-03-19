@@ -1,7 +1,37 @@
 h1 {
     font-family: 'Abril Fatface', cursive;
+    /* position: fixed; */
+    right: 0;
+    top: 0;
+    width: 100%;
+    /* background-color: rgb(225, 218, 206); */
+    color: rgb(43, 75, 52);
+    text-align: center;
 }
 
 footer {
     font-family: 'Rufina', serif;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+   /* background-color: rgb(225, 218, 206); */
+    color: rgb(43, 75, 52);
+    text-align: center;
+}
+
+form {
+    margin: 1rem;
+}
+
+label {
+    display: block;
+    margin: 1rem;
+    padding: .75 rem 0;
+}
+
+input, textarea {
+    margin: 1rem;
+    display: block;
+    
 }
