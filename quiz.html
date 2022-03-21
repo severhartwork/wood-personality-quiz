@@ -17,11 +17,63 @@
     <header></header>
 
     <h1>Which Wood Species are You?</h1>
+    <br>
+
+    <form name="myForm" action="formProcessor.html" method="post">
 
 
+        <section id="favoriteColor" class="">
+            <label>
+                <div>Favorite Color</div>
+                <input name="name" type="text" class="myInput" autocomplete="name">
+                <span>Close your eyes and type the color you see</span>
+            </label>
+        </section>
 
+        <section id="birthState" class="">
+            <label>
+                <div>State of Birth</div>
+                <input name="name" type="text" class="myInput" autocomplete="name">
+                <span>In which state were you born?</span>
+            </label>
+        </section>
+
+        <section id="mindState" class="">
+            <label>
+                <div>Sate of Mind</div>
+                <input name="name" type="text" class="myInput" autocomplete="name">
+                <span>How do you feel?</span>
+            </label>
+        </section>
+
+
+        <section id="favoriteNumber" class="">
+            <label>
+                <div>Pick a Number Between 1 and 100</div>
+                <input name="number" type="tel" class="myInput" placeholder="1-100" autocomplete="tel">
+                <span>There is no wrong answer!</span>
+            </label>
+        </section>
+
+        <section id="Season" class="">
+            <label>
+                <div>Favorite Time of Year</div>
+                <select name="favSeason" class="myInput">
+                    <option value="">Please Select</option>
+                    <option value="Winter">Winter</option>
+                    <option value="Spring">Spring</option>
+                    <option value="Summer">Summer</option>
+                    <option value="Autumn">Autumn</option>
+
+                </select>
+            </label>
+            <span>What is your favorite Season?</span>
+        </section>
+
+        <input type="submit" value="Which Tree am I?" id="submitButton" class="subBtn">
 
     </form>
+
 
     <footer>Copyright Seth Everhart 2022</footer>
 </body>

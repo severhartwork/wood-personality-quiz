@@ -9,19 +9,10 @@ h1 {
     text-align: center;
 }
 
-footer {
-    font-family: 'Rufina', serif;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-   /* background-color: rgb(225, 218, 206); */
-    color: rgb(43, 75, 52);
-    text-align: center;
-}
-
 form {
+    font-family: 'Rufina', serif;
     margin: 1rem;
+    max-width: 27rem;
 }
 
 label {
@@ -30,8 +21,40 @@ label {
     padding: .75 rem 0;
 }
 
-input, textarea {
-    margin: 1rem;
-    display: block;
+span {
+    font-size: .75rem;
+    color: rgb(39, 87, 55);
+}
+
+input {
+    font-family: 'Rufina', serif;
+    /* display: block; */
+    align-content: center;
+    font-size: 1rem;
+    padding: .75rem;
+    background-color: rgb(244, 215, 166);
+    border: 1px solid rgb(131, 96, 35);
+    margin-top: .25rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.subBtn {
+    max-width: 20rem;
+  
     
+}
+
+footer {
+    font-family: 'Rufina', serif;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* background-color: rgb(225, 218, 206); */
+    color: rgb(43, 75, 52);
+    text-align: center;
 }
