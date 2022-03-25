@@ -42,6 +42,7 @@ h2 {
 }
 
 .bodyMenu {
+    font-family: 'Rufina', serif;
     display: flex;
     flex-direction: column;
 }
