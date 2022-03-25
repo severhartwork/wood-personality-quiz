@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wood Personality Quiz</title>
+    <title>Welcome to the Woodsis - Quiz</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,15 +14,17 @@
 
 <body>
 
-    <header></header>
+    <header>Welcome to the Woodsis</header>
 
     <h1>Which Wood Species are You?</h1>
     <br>
 
     <form name="myForm" action="formProcessor.html" method="post">
-
-
-        <section id="favoriteColor" class="">
+    <section id="formProblems" class=""
+        <p>Whoops! We must have all of your answers for this highly scientific test.<br>
+            Please answer the highlighted items.</p>
+        </section>
+        <section id="favoriteColor" class="error">
             <label>
                 <div>Favorite Color</div>
                 <input name="name" type="text" class="myInput" autocomplete="name">
@@ -30,7 +32,7 @@
             </label>
         </section>
 
-        <section id="birthState" class="">
+        <section id="birthState" class="error">
             <label>
                 <div>State of Birth</div>
                 <input name="name" type="text" class="myInput" autocomplete="name">
@@ -38,7 +40,7 @@
             </label>
         </section>
 
-        <section id="mindState" class="">
+        <section id="mindState" class="error">
             <label>
                 <div>Sate of Mind</div>
                 <input name="name" type="text" class="myInput" autocomplete="name">
@@ -47,7 +49,7 @@
         </section>
 
 
-        <section id="favoriteNumber" class="">
+        <section id="favoriteNumber" class="error">
             <label>
                 <div>Pick a Number Between 1 and 100</div>
                 <input name="number" type="tel" class="myInput" placeholder="1-100" autocomplete="tel">
@@ -67,8 +69,8 @@
 
                 </select>
             </label>
-            <span>What is your favorite Season?</span>
         </section>
+        <br>
 
         <input type="submit" value="Which Tree am I?" id="submitButton" class="subBtn">
 

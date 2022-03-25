@@ -1,4 +1,25 @@
+header {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 3rem;
+    color: rgb(43, 75, 52);
+    right: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
 h1 {
+    font-family: 'Abril Fatface', cursive;
+    /* position: fixed; */
+    right: 0;
+    top: 0;
+    width: 100%;
+    /* background-color: rgb(225, 218, 206); */
+    color: rgb(43, 75, 52);
+    text-align: center;
+}
+
+h2 {
     font-family: 'Abril Fatface', cursive;
     /* position: fixed; */
     right: 0;
@@ -57,4 +78,8 @@ footer {
     /* background-color: rgb(225, 218, 206); */
     color: rgb(43, 75, 52);
     text-align: center;
+}
+
+p {
+    display: none;
 }
