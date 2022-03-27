@@ -87,8 +87,11 @@ h2 {
 
 .bodyMenu {
     font-family: 'Rufina', serif;
+    list-style: none;
     display: flex;
     flex-direction: column;
+    padding-left: 2rem;
+    
 }
 
 form {
