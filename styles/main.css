@@ -1,11 +1,42 @@
-header {
-    font-family: 'Abril Fatface', cursive;
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2 rem;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(43, 75, 52);
+}
+
+.menuItems {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+    
+.menuItems li a {
+    font-size: 1rem;
+    padding: 0.5em 1em;    
+}
+
+.menuItems li a:hover {
+    background-color:  rgb(244, 215, 166);
+}
+
+
+
+   /* font-family: 'Abril Fatface', cursive;
     font-size: 1rem;
     color: rgb(43, 75, 52);
     right: 0;
     top: 0;
     width: 100%;
-    text-align: center;
+    text-align: center; 
 }
 
 ul {
@@ -18,7 +49,7 @@ li {
     display: inline-block;
     margin: 20px;
 }
-
+*/
 h1 {
     font-family: 'Abril Fatface', cursive;
     /* position: fixed; */
@@ -39,6 +70,19 @@ h2 {
     /* background-color: rgb(225, 218, 206); */
     color: rgb(43, 75, 52);
     text-align: center;
+}
+
+.bodyDiv {
+
+    max-width: 90%;
+    padding-left: 2rem;
+}
+.bodyTxt {
+    font-family: 'Rufina', serif;
+}
+
+.bfCalc {
+    font-family: 'Rufina', serif;
 }
 
 .bodyMenu {
@@ -80,15 +124,13 @@ input {
 
 }
 
-.button {
-    
-}
+.button {}
 
 .subBtn {
     max-width: 20rem;
-   
-  
-    
+
+
+
 }
 
 footer {

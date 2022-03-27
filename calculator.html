@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to the Woodsis - Calculator</title>
+    <link rel="stylesheet" href="styles/test.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,23 +15,52 @@
 
 <body>
 
-    <header>Welcome to the Woodsis</header>
+    <nav>
+        <div class="logo">
+            <h4>Pick a Branch</h4>
+        </div>
+        <ul class="navLinks">
+            <li><a href="main.html" class="menuItem">Home Tree Home</a></li>
+            <li><a href="quiz.html" class="menuItem">Which Tree Would You Be?</a></li>
+            <li><a href="visit.html" class="menuItem">See a Tree</a></li>
+            <li><a href="calculator.html" class="menuItem">How Much Tree is Me?</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+
+        </div>
+    </nav>
+
+    <div class="bodyDiv">
+   
 
     <h1>How Much Tree is Me?</h1>
- 
+    <br>
+
+    <article class="bodyTxt">
+        Did you know lumber is sold in units called Board Feet? Imagine you started the day as a log, and now find
+        youself cut into boards. To add insult to injury, you're about to be sold! We must make sure you are purcahsed
+        for a fair price.
+        <br>
+        <br>
+    </article>
+
     <div class="bfCalc">
         How tall, in inches, are you? <input type="number" id="height"><br><br>
         What is you waistline, also in inches?<input type="number" id="waist"><br><br>
 
         <button id="btn">How Much Wood am I?</button>
         <br><br>
-        If you were sold today for lumber, the purchaser would have bought...
+        If you were sold today as lumber, the purchaser would have bought...
         <input type="number" id="boardFeet"><br>
         ... board feet of person!
 
     </div>
-
+</div>
     <script src="js/converter.js" type="text/javascript"></script>
+    <script src="js/test.js"></script>
 
     <footer>Copyright Seth Everhart 2022</footer>
 </body>
