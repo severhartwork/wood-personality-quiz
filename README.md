@@ -19,3 +19,7 @@ This is demonstrated in the board foot calculator. The user provides information
 "Calculate and display data based on an external factor (ex: get the current date, and display how many days remaining until some event)"
 
 This is demonstrated in "How Long Until Arbor Day". 
+
+"Visualize data in a graph, chart, or other visual representation of data"
+
+This is demonstrated in the "See Tree Charts" section. 

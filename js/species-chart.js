@@ -1,6 +1,6 @@
 let labels1 = ['Oak', 'Maple', 'Walnut', 'Cherry', 'Birch', 'Poplar'];
 let data1 = [30, 30, 10, 10, 10, 10];
-let colors1 = ['#B99D5B', '#E3C88B','##2E2104','#A15E0E','#E8D59D','#DBDC97'];
+let colors1 = ['#B99D5B', '#E3C88B','#2E2104','#A15E0E','#E8D59D','#DBDC97'];
 
 let myChart1 = document.getElementById("myChart").getContext('2d');
 
@@ -18,7 +18,7 @@ let chart1 = new Chart(myChart1, {
     },
     options: {
         title: {
-            text: "What are the most common North American Hardwoods?",
+            text: "Common North American Hardwoods?",
             display: true
         }
     }
@@ -27,7 +27,7 @@ let chart1 = new Chart(myChart1, {
 
 let labels2 = ['New Housing', 'Repair and Remodeling', 'Packing and Shipping', 'Non-Residentail', 'Manufacturing'];
 let data2 = [30, 20, 10, 10, 10];
-let colors2 = ['#DB5711', '#86D16D','#6DBAD1','#102462','#010206'];
+let colors2 = ['#B99D5B', '#E3C88B','#2E2104','#A15E0E','#E8D59D'];
 
 let myChart2 = document.getElementById("myChart2").getContext('2d');
 
@@ -67,20 +67,29 @@ let chart3 = new Chart(myChart3, {
             {
             label: 'Maple',
             fill: true,
-            backgroundColor: "rgba(179, 181, 198, 0.2)",
-            borderColor: "rgba(179, 181, 198, 1)",
+            backgroundColor: "rgba(186, 162, 84, 0.2)",
+            borderColor: "rgba(186, 162, 84, 1)",
             pointBorderColor: "#ffff",
-            pointBackgroundColor: "rgba(179, 181, 198, 1)",
+            pointBackgroundColor: "rgba(186, 162, 84, 1)",
             data: [40, 78, 10, 5]    
         },
         {
             label: 'Walnut',
             fill: true,
-            backgroundColor: "rgba(255, 99, 132, 0.2)",
-            borderColor: "rgba(255, 99, 132, 1)",
+            backgroundColor: "rgba(38, 27, 3, 0.2)",
+            borderColor: "rgba(38, 27, 3, 1)",
             pointBorderColor: "#ffff",
-            pointBackgroundColor: "rgba(255, 99, 132, 1)",
+            pointBackgroundColor: "rgba(38, 27, 3, 1)",
             data: [60, 27, 20, 35]    
+        },
+        {
+            label: 'Cherry',
+            fill: true,
+            backgroundColor: "rgba(179, 94, 34, 0.2)",
+            borderColor: "rgba(179, 94, 34, 1)",
+            pointBorderColor: "#ffff",
+            pointBackgroundColor: "rgba(179, 94, 34, 1)",
+            data: [30, 40, 50, 90]    
         }
 
         ]
