@@ -9,6 +9,8 @@ form.addEventListener('submit', e => {
 
     validateInputs();
 
+
+
 });
 
 const setError = (element, message) => {
@@ -66,7 +68,7 @@ const validateInputs = () => {
     if(password2Value === '') {
         setError(password2, 'Please confirm your password');
     } else if (password2Value !== passwordValue) {
-        setError(password2, "Passwords doesn't match");
+        setError(password2, "Passwords don't match");
     } else {
         setSuccess(password2);
     }
