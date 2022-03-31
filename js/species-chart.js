@@ -17,9 +17,14 @@ let chart1 = new Chart(myChart1, {
         ]
     },
     options: {
-        title: {
-            text: "Common North American Hardwoods?",
-            display: true
+        plugins: {
+            title: {
+                text: "Common North American Hardwoods",
+                display: true
+            },
+            legend: {
+                display: false
+            }
         }
     }
 
@@ -97,9 +102,14 @@ let chart3 = new Chart(myChart3, {
         ]
     },
     options: {
-        title: {
-            text: "Working Characteristics Walnut vs Maple",
-            display: true
+        plugins: {
+            title: {
+                text: "Working Characteristics",
+                display: true
+            },
+            legend: {
+                display: false
+            }
         }
     }
 
@@ -124,12 +134,14 @@ let chart4 = new Chart(myChart4, {
         ]
     },
     options: {
-        title: {
-            text: "Production by Country",
-            display: true
-        },
-        legend: {
-            display: false
+        plugins: {
+            title: {
+                text: "Lumber Production by Country",
+                display: true
+            },
+            legend: {
+                display: false
+            }
         }
     }
 

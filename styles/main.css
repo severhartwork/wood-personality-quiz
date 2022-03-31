@@ -33,28 +33,6 @@ header a {
     background-color:  rgb(244, 215, 166);
 }
 
-
-
-   /* font-family: 'Abril Fatface', cursive;
-    font-size: 1rem;
-    color: rgb(43, 75, 52);
-    right: 0;
-    top: 0;
-    width: 100%;
-    text-align: center; 
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-li {
-    display: inline-block;
-    margin: 20px;
-}
-*/
 h1 {
     font-family: 'Abril Fatface', cursive;
     /* position: fixed; */
@@ -97,6 +75,11 @@ h2 {
     flex-direction: column;
     padding-left: 2rem;
     
+}
+
+.mainIMG {
+    max-width: 80%;
+    align-items: center;
 }
 
 form {
