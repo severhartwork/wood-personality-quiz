@@ -26,6 +26,8 @@ form.addEventListener('submit', e => {
       e.preventDefault();
     }
 
+
+
 });
 
 const setError = (element, message) => {
@@ -85,7 +87,11 @@ const validateInputs = () => {
     if(password2Value === '') {
         hasErrors = setError(password2, 'Please confirm your password');
     } else if (password2Value !== passwordValue) {
+ prevent-default-stuff
         hasErrors = setError(password2, "Passwords doesn't match");
+
+        setError(password2, "Passwords don't match");
+ main
     } else {
         setSuccess(password2);
     }
