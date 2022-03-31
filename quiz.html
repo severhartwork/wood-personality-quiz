@@ -24,6 +24,7 @@
         <ul class="navLinks">
             <li><a href="main.html" class="menuItem">Home Tree Home</a></li>
             <li><a href="calculator.html" class="menuItem">How Much Tree is Me?</a></li>
+            <li><a href="countdown.html" class="menuItem">How Long Until Arbor Day?</a></li>
             <li><a href="charts.html" class="menuItem">See Tree Charts</a></li>
             <li><a href="quiz.html" class="menuItem">Which Tree Would You Be?</a></li>
             <li><a href="visit.html" class="menuItem">See a Tree</a></li>
@@ -36,69 +37,56 @@
         </div>
     </nav>
     <br>
+    <div class="bodyDiv">
     <h1>Which Tree Would You Be?</h1>
-    <br>
 
-    <form name="myForm" action="formProcessor.html" method="post">
-    <section id="formProblems" class=""
-        <p>Whoops! We must have all of your answers for this highly scientific test.<br>
-            Please answer the highlighted items.</p>
-        </section>
-        <section id="favoriteColor" class="error">
-            <label>
-                <div>Favorite Color</div>
-                <input name="name" type="text" class="myInput" autocomplete="name">
-                <span>Close your eyes and type the color you see</span>
-            </label>
-        </section>
-
-        <section id="birthState" class="error">
-            <label>
-                <div>State of Birth</div>
-                <input name="name" type="text" class="myInput" autocomplete="name">
-                <span>In which state were you born?</span>
-            </label>
-        </section>
-
-        <section id="mindState" class="error">
-            <label>
-                <div>Sate of Mind</div>
-                <input name="name" type="text" class="myInput" autocomplete="name">
-                <span>How do you feel?</span>
-            </label>
-        </section>
-
-
-        <section id="favoriteNumber" class="error">
-            <label>
-                <div>Pick a Number Between 1 and 100</div>
-                <input name="number" type="tel" class="myInput" placeholder="1-100" autocomplete="tel">
-                <span>There is no wrong answer!</span>
-            </label>
-        </section>
-
-        <section id="Season" class="">
-            <label>
-                <div>Favorite Time of Year</div>
-                <select name="favSeason" class="myInput">
-                    <option value="">Please Select</option>
-                    <option value="Winter">Winter</option>
-                    <option value="Spring">Spring</option>
-                    <option value="Summer">Summer</option>
-                    <option value="Autumn">Autumn</option>
-
-                </select>
-            </label>
-        </section>
-        <br>
-
-        <input type="submit" value="Which Tree Do I Be?" id="submitButton" class="subBtn">
-
+    <form id="inputs">
+    <div>Are You a Happy Person?</div>
+      <input type="arg1" id="arg1" value=""></input>
+      <span>1 = "Not at All" 5 = "So, So Happy!"</span>
+      <br>
+      <br>
+      <div>Are You Nice to Animals?</div>
+      <input type="arg2" id="arg2" value=""></input>
+      <span>1 = "I Kick Them" 5 = "I Love Them!"</span>
+      <br>
+      <br>
+      <div>Do You Have Faith in Humanity?</div>
+      <input type="arg3" id="arg3" value=""></input>
+      <span>1 = "Thanos Was Right" 5 = "Humans Are the Best!"</span>
+      <br>
+      <br>
+      <div>Is Love Real?</div>
+      <input type="arg4" id="arg4" value=""></input>
+      <span>1 = "Love, Schmuv 5 = "I AM Love"</span>
+      <br>
+      <br>
+      <br/>
+      <button type="button" id="calculate" onClick="window.calculate()">What's My Score?</button>
     </form>
+    <p id="result" style="color: rgb(20, 112, 26); font-size: 2em;"></p>
 
+    <div>
+        <p class="scores">
+            If you scored: 
+            <br>
+            1-50 you are a Weeping Willow
+            <br>
+            51-125 you are a Maple
+            <br>
+            126-250 you are a White Oak
+            <br>
+            251-375 you are a Red Oak
+            <br>
+            376-500 you are a Cherry
+            <br>
+            501-625 you are a Walnut
+            <br>
+        </p>
+    </div>
     <script src="js/script.js"></script>
-
-    <footer>Copyright Seth Everhart 2022</footer>
+    <script src="js/quiz.js"></script>
+</div>
 </body>
 
 </html>

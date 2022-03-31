@@ -34,34 +34,27 @@
 
         </div>
     </nav>
+    <h1>Arbor Day Countdown</h1>
+  <br>
+  <br>
+      <p class="arborDay">
+        Arbor Day (or Arbour in some countries) is a secular day of observance in which individuals and groups are encouraged to plant trees.
+      </p>
+      <br>
+    <p id="result" style="color: rgb(37, 146, 54); font-size: 2em; padding-left: 20px;"></p>
+    <script type="text/javascript">
+        const arborDay = new Date('2022-04-29');
+        const now = new Date();
+  
+        const msLeft = arborDay - now;
+        const daysLeft = Math.round((msLeft / (60*60*24*1000)));
+  
+        document.getElementById('result').innerText = "You have " + daysLeft + " days until Arbor Day!";
+  
+      </script>
 
-    <div class="bodyDiv">
-   
-
-    <h1>How Much Tree is Me?</h1>
-    <br>
-
-    <article class="bodyTxt">
-        Did you know lumber is sold in units called Board Feet? Imagine you started the day as a log, and now find
-        youself cut into boards. To add insult to injury, you're about to be sold! We must make sure you are purcahsed
-        for a fair price.
-        <br>
-        <br>
-    </article>
-
-    <div class="bfCalc">
-        How tall, in inches, are you? <input type="number" id="height"><br><br>
-        What is you waistline, also in inches?<input type="number" id="waist"><br><br>
-
-        <button id="btn">How Much Wood am I?</button>
-        <br><br>
-        If you were sold today as lumber, the purchaser would have bought...
-        <input type="number" id="boardFeet"><br>
-        ... board feet of person!
-
-    </div>
 </div>
-    <script src="js/converter.js" type="text/javascript"></script>
+    
     <script src="js/script.js"></script>
 
     <footer>Copyright Seth Everhart 2022</footer>

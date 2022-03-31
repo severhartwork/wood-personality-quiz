@@ -132,8 +132,6 @@ input {
 
 }
 
-.button {}
-
 .subBtn {
     max-width: 20rem;
 
@@ -238,6 +236,11 @@ nav{
 
 /*nav end*/
 
+.scores {
+    font-family: 'Rufina', serif;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
 footer {
     font-family: 'Rufina', serif;
     position: fixed;
@@ -249,6 +252,9 @@ footer {
     text-align: center;
 }
 
-p {
-    display: none;
+.arborDay {
+    font-family: 'Rufina', serif;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
 }
