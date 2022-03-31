@@ -44,12 +44,14 @@ let chart2 = new Chart(myChart2, {
         ]
     },
     options: {
-        title: {
-            text: "Primary Lumber Uses",
-            display: true
-        },
-        legend: {
-            display: false
+        plugins: {
+            title: {
+                text: "Primary Lumber Uses",
+                display: true
+            },
+            legend: {
+                display: false
+            }
         }
     }
 
@@ -71,7 +73,7 @@ let chart3 = new Chart(myChart3, {
             borderColor: "rgba(186, 162, 84, 1)",
             pointBorderColor: "#ffff",
             pointBackgroundColor: "rgba(186, 162, 84, 1)",
-            data: [40, 78, 10, 5]    
+            data: [40, 78, 10, 5]
         },
         {
             label: 'Walnut',
@@ -80,7 +82,7 @@ let chart3 = new Chart(myChart3, {
             borderColor: "rgba(38, 27, 3, 1)",
             pointBorderColor: "#ffff",
             pointBackgroundColor: "rgba(38, 27, 3, 1)",
-            data: [60, 27, 20, 35]    
+            data: [60, 27, 20, 35]
         },
         {
             label: 'Cherry',
@@ -89,7 +91,7 @@ let chart3 = new Chart(myChart3, {
             borderColor: "rgba(179, 94, 34, 1)",
             pointBorderColor: "#ffff",
             pointBackgroundColor: "rgba(179, 94, 34, 1)",
-            data: [30, 40, 50, 90]    
+            data: [30, 40, 50, 90]
         }
 
         ]
