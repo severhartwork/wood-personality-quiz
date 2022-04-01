@@ -1,6 +1,9 @@
 # wood-personality-quiz
 
 Use notes for review:
+
+* Please make sure you are on the funky-main branch. 
+
 This project uses Bootstrap, chart.js and node.js. 
 
 It features 4 of the functions listed in the project requirements and 1 not listed. 
