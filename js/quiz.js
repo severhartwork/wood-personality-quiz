@@ -7,14 +7,3 @@ function calculate() {
     document.getElementById('result').innerText = "Result: " + result ;
     return false;
   }
-
-
-
-  /*    4-50 Weeping Willow
-        51-125 Maple
-        126-250 White Oak
-        251-375 Red Oak
-        376-500 Cherry
-        501-625 Walnut
-
-  */
