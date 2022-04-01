@@ -32,7 +32,7 @@ header a {
 .menuItems li a:hover {
     background-color:  rgb(244, 215, 166);
 }
-.container {
+.container1 {
     display: flex;
     justify-content: center;
     
@@ -61,7 +61,6 @@ h2 {
 }
 
 .bodyDiv {
-
     max-width: 90%;
     padding-left: 2rem;
 }
