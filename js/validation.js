@@ -5,9 +5,11 @@ const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
 
 form.addEventListener('submit', e => {
-    e.preventDefault();
 
-    validateInputs();
+
+    if (!validateInputs()) {
+        e.preventDefault();
+    }
 
 
 
@@ -20,6 +22,7 @@ const setError = (element, message) => {
     errorDisplay.innerText = message;
     inputControl.classList.add('error');
     inputControl.classList.remove('success');
+    return true;
 }
 
 const setSuccess = element => {
@@ -42,35 +45,37 @@ const validateInputs = () => {
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
     const password2Value = password2.value.trim();
+    let hasErrors = false;
 
     if(usernameValue === '') {
-        setError(username, 'Username is required');
+        hasErrors = setError(username, 'Username is required');
     } else {
         setSuccess(username);
     }
 
     if(emailValue === '') {
-        setError(email, 'Email is required');
+        hasErrors = setError(email, 'Email is required');
     } else if (!isValidEmail(emailValue)) {
-        setError(email, 'Provide a valid email address');
+        hasErrors = setError(email, 'Provide a valid email address');
     } else {
         setSuccess(email);
     }
 
     if(passwordValue === '') {
-        setError(password, 'Password is required');
+        hasErrors = setError(password, 'Password is required');
     } else if (passwordValue.length < 8 ) {
-        setError(password, 'Password must be at least 8 character.')
+        hasErrors = setError(password, 'Password must be at least 8 character.')
     } else {
         setSuccess(password);
     }
 
     if(password2Value === '') {
-        setError(password2, 'Please confirm your password');
+        hasErrors = setError(password2, 'Please confirm your password');
     } else if (password2Value !== passwordValue) {
-        setError(password2, "Passwords don't match");
+        hasErrors = setError(password2, "Passwords don't match");
     } else {
         setSuccess(password2);
     }
 
+    return !hasErrors;
 };
